@@ -1,5 +1,5 @@
-import { IUser } from "./users.interface";
-import { User } from "./users.model";
+import { IUser } from './users.interface';
+import { User } from './users.model';
 
 export const findLastUser = async (role: string): Promise<IUser | null> => {
   const lastUser = await User?.findOne({ role }, { id: 1, _id: 0 })

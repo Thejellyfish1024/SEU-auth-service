@@ -1,5 +1,16 @@
 {
   "semi": true,
-  "singleQuote": false,
-  "arrowParens": "avoid"
+  "singleQuote": true,
+  "arrowParens": "avoid",
+  "parser": "typescript",
+  "tabWidth": 2,
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": {
+        "parser": "json"
+      }
+    }
+  ]
 }
