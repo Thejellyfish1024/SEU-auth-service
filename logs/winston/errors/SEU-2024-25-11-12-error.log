@@ -1,0 +1,1 @@
+Mon Nov 25 2024 12:0:7 --> [SEU] error: Failed to connect database The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.

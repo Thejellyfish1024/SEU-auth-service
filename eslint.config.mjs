@@ -1,18 +1,32 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import tseslint from "typescript-eslint";
-import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
+import eslintPlugin from '@typescript-eslint/eslint-plugin';
+import eslintParser from '@typescript-eslint/parser';
+import prettierPlugin from 'eslint-plugin-prettier';
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
   {
-    files: ["**/*.{js,mjs,cjs,ts}"], // File patterns to lint
-    ignores: ["node_modules/", "dist/", ".env/"], // Files/directories to ignore
+    files: ['**/*.ts', '**/*.js'],
+    ignores: ['node_modules', 'dist'],
     languageOptions: {
-      globals: globals.node, // Node.js globals
+      ecmaVersion: 2021,
+      sourceType: 'module',
+      parser: eslintParser,
+      globals: {
+        process: 'readonly',
+        console: 'readonly',
+      },
+    },
+    plugins: {
+      '@typescript-eslint': eslintPlugin,
+      prettier: prettierPlugin,
+    },
+    rules: {
+      'no-unused-vars': 'error',
+      'prefer-const': 'error',
+      'no-unused-expressions': 'error',
+      'no-undef': 'error',
+      'no-console': 'off',
+      '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+      '@typescript-eslint/explicit-module-boundary-types': 'off',
     },
   },
-  pluginJs.configs.recommended, // ESLint recommended config for JS
-  ...tseslint.configs.recommended, // TypeScript-specific rules
-  eslintPluginPrettierRecommended,
 ];

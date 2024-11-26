@@ -1,0 +1,40 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\projects\\SEU-auth-service\\logs\\winston\\errors\\.6b2f4d1dc9bc6fa5c8926178f65d7dfaea89d49b-audit.json",
+    "files": [
+        {
+            "date": 1732436643817,
+            "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\errors\\SEU-2024-24-11-14-error.log",
+            "hash": "4ecff7c4b760a6c963eabe6801b5e7f11013d90f516241bd81bb3e7318f9dd5b"
+        },
+        {
+            "date": 1732514217426,
+            "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\errors\\SEU-2024-25-11-11-error.log",
+            "hash": "af8c7acdf13eea0a63e67b6c12ef2440e2f261f7faccb8a35afa5aa5aa64519b"
+        },
+        {
+            "date": 1732514407354,
+            "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\errors\\SEU-2024-25-11-12-error.log",
+            "hash": "b7c3f4cd6a78d95b55823810b0266fbd4ce134219cad89d96d249b5486e6f259"
+        },
+        {
+            "date": 1732518769996,
+            "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\errors\\SEU-2024-25-11-13-error.log",
+            "hash": "459f34ffe7b57e5a643be22a1c18fabe380951c3a93e2a7153f9f6acc7e1d9a9"
+        },
+        {
+            "date": 1732521613404,
+            "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\errors\\SEU-2024-25-11-14-error.log",
+            "hash": "2a2787197aeface14c2d151e7626c310fa77248dadcb0cf7af8647ad1b6c87a5"
+        },
+        {
+            "date": 1732525614974,
+            "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\errors\\SEU-2024-25-11-15-error.log",
+            "hash": "1f566e00a29df92f1bd83f3b47c793634da6674d0c936377b0f43b896f17f08b"
+        }
+    ],
+    "hashType": "sha256"
+}
