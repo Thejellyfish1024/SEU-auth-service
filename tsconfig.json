@@ -2,6 +2,10 @@
   "include": ["src"], // which files to compile
   "exclude": ["node_modules", "dist"], // which files to skip
   "compilerOptions": {
+    "baseUrl": "./",
+     "paths": {
+      "http-status": ["node_modules/http-status/dist/index.d.ts"]
+    },
     /* Visit https://aka.ms/tsconfig to read more about this file */
     /* Projects */
     // "incremental": true,                              /* Save .tsbuildinfo files to allow for incremental compilation of projects. */

@@ -34,6 +34,11 @@
             "date": 1732525614970,
             "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\successes\\SEU-2024-25-11-15-success.log",
             "hash": "8ce75af44d3b0039955edfca8724fb9636e597b37a8db8244881b62aa622f02c"
+        },
+        {
+            "date": 1732775777409,
+            "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\successes\\SEU-2024-28-11-12-success.log",
+            "hash": "7158b10e30074051d1a34cc4350cb5d32bc2204a2ba0e2ca776bf31e330360a3"
         }
     ],
     "hashType": "sha256"

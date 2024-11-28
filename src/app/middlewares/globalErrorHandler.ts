@@ -1,15 +1,19 @@
-import { ErrorRequestHandler, Request, Response } from 'express';
+import { ErrorRequestHandler, NextFunction, Request, Response } from 'express';
 import config from '../../config';
 import ApiError from '../../errors/ApiError';
 import { IGenericErrorMessage } from '../../interfaces/error';
 import handleValidationError from '../../errors/handleValidationError';
 import { errorLogger } from '../../shared/logger';
+import { ZodError } from 'zod';
+import handleZodError from '../../errors/handleZodError';
+import handleCastError from '../../errors/handleCastError';
 
 const globalErrorHandler: ErrorRequestHandler = (
   error,
   req: Request,
   res: Response,
-  // next: NextFunction,
+  // eslint-disable-next-line no-unused-vars
+  next: NextFunction,
 ) => {
   if (config.env === 'development') {
     console.log(`🐱‍🏍 globalErrorHandler ~~`, { error });
@@ -25,19 +29,17 @@ const globalErrorHandler: ErrorRequestHandler = (
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
     errorMessages = simplifiedError.errorMessages;
-  }
-  //   else if (error instanceof ZodError) {
-  //     const simplifiedError = handleZodError(error);
-  //     statusCode = simplifiedError.statusCode;
-  //     message = simplifiedError.message;
-  //     errorMessages = simplifiedError.errorMessages;
-  //   } else if (error?.name === 'CastError') {
-  //     const simplifiedError = handleCastError(error);
-  //     statusCode = simplifiedError.statusCode;
-  //     message = simplifiedError.message;
-  //     errorMessages = simplifiedError.errorMessages;
-  //   }
-  else if (error instanceof ApiError) {
+  } else if (error instanceof ZodError) {
+    const simplifiedError = handleZodError(error);
+    statusCode = simplifiedError.statusCode;
+    message = simplifiedError.message;
+    errorMessages = simplifiedError.errorMessages;
+  } else if (error?.name === 'CastError') {
+    const simplifiedError = handleCastError(error);
+    statusCode = simplifiedError.statusCode;
+    message = simplifiedError.message;
+    errorMessages = simplifiedError.errorMessages;
+  } else if (error instanceof ApiError) {
     statusCode = error?.statusCode;
     message = error.message;
     errorMessages = error?.message
