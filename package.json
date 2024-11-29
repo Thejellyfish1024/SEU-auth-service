@@ -17,10 +17,7 @@
   "author": "Mohammad Rahim",
   "license": "ISC",
   "lint-staged": {
-    "src/**/*.{ts,js}": [
-      "npm run lint:fix",
-      "npm run prettier:fix"
-    ]
+    "src/**/*.{ts,js}": ["npm run lint:fix", "npm run prettier:fix"]
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
