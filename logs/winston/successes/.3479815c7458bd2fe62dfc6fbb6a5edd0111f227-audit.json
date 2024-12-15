@@ -1,50 +1,50 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "C:\\projects\\SEU-auth-service\\logs\\winston\\successes\\.3479815c7458bd2fe62dfc6fbb6a5edd0111f227-audit.json",
+  "files": [
+    {
+      "date": 1732436643812,
+      "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\successes\\SEU-2024-24-11-14-success.log",
+      "hash": "30cdd3dc7c2302f6802fee02060bdc684d840a4e78f4328e65a7ae0b7a9e509b"
     },
-    "auditLog": "C:\\projects\\SEU-auth-service\\logs\\winston\\successes\\.3479815c7458bd2fe62dfc6fbb6a5edd0111f227-audit.json",
-    "files": [
-        {
-            "date": 1732436643812,
-            "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\successes\\SEU-2024-24-11-14-success.log",
-            "hash": "30cdd3dc7c2302f6802fee02060bdc684d840a4e78f4328e65a7ae0b7a9e509b"
-        },
-        {
-            "date": 1732514217406,
-            "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\successes\\SEU-2024-25-11-11-success.log",
-            "hash": "f39da2e1c570b95d0d0cf361a0af64c4ee3865fdde712b0d7097a24862a6a1eb"
-        },
-        {
-            "date": 1732514407345,
-            "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\successes\\SEU-2024-25-11-12-success.log",
-            "hash": "461bfc904fcf203ad19f16d85a63751de2367cf88882c56d7ef7bc8efa9084f1"
-        },
-        {
-            "date": 1732518769989,
-            "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\successes\\SEU-2024-25-11-13-success.log",
-            "hash": "0ff241f9d795f6afd15595f70628bb9a73c2606b84f0b26f5df2315a0ce579d9"
-        },
-        {
-            "date": 1732521613397,
-            "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\successes\\SEU-2024-25-11-14-success.log",
-            "hash": "1498dbe0add09528474b552c4e5c9432d1f36bdafd7c28f268075fd75d6783ad"
-        },
-        {
-            "date": 1732525614970,
-            "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\successes\\SEU-2024-25-11-15-success.log",
-            "hash": "8ce75af44d3b0039955edfca8724fb9636e597b37a8db8244881b62aa622f02c"
-        },
-        {
-            "date": 1732775777409,
-            "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\successes\\SEU-2024-28-11-12-success.log",
-            "hash": "7158b10e30074051d1a34cc4350cb5d32bc2204a2ba0e2ca776bf31e330360a3"
-        },
-        {
-            "date": 1732862301689,
-            "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\successes\\SEU-2024-29-11-12-success.log",
-            "hash": "af5a54a31c5104d14b627c59c587a5971097ddfe2c9a6662698879ba4240095e"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1732514217406,
+      "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\successes\\SEU-2024-25-11-11-success.log",
+      "hash": "f39da2e1c570b95d0d0cf361a0af64c4ee3865fdde712b0d7097a24862a6a1eb"
+    },
+    {
+      "date": 1732514407345,
+      "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\successes\\SEU-2024-25-11-12-success.log",
+      "hash": "461bfc904fcf203ad19f16d85a63751de2367cf88882c56d7ef7bc8efa9084f1"
+    },
+    {
+      "date": 1732518769989,
+      "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\successes\\SEU-2024-25-11-13-success.log",
+      "hash": "0ff241f9d795f6afd15595f70628bb9a73c2606b84f0b26f5df2315a0ce579d9"
+    },
+    {
+      "date": 1732521613397,
+      "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\successes\\SEU-2024-25-11-14-success.log",
+      "hash": "1498dbe0add09528474b552c4e5c9432d1f36bdafd7c28f268075fd75d6783ad"
+    },
+    {
+      "date": 1732525614970,
+      "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\successes\\SEU-2024-25-11-15-success.log",
+      "hash": "8ce75af44d3b0039955edfca8724fb9636e597b37a8db8244881b62aa622f02c"
+    },
+    {
+      "date": 1732775777409,
+      "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\successes\\SEU-2024-28-11-12-success.log",
+      "hash": "7158b10e30074051d1a34cc4350cb5d32bc2204a2ba0e2ca776bf31e330360a3"
+    },
+    {
+      "date": 1732862301689,
+      "name": "C:\\projects\\SEU-auth-service\\logs\\winston\\successes\\SEU-2024-29-11-12-success.log",
+      "hash": "af5a54a31c5104d14b627c59c587a5971097ddfe2c9a6662698879ba4240095e"
+    }
+  ],
+  "hashType": "sha256"
 }
